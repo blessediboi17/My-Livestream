@@ -9,28 +9,34 @@
 <body>
     <header>
         <div class="status-bar">
-            <span class="dot"></span> LIVE
+            <span class="dot"></span> STANDBY
         </div>
         <h1>MY STREAM</h1>
     </header>
 
     <main class="container">
         <section class="video-container">
+            <div id="overlay" class="overlay">
+                <div class="message">
+                    <h2>STREAM STARTING SOON</h2>
+                    <p>YouTube is currently verifying the channel. Check back in 24 hours!</p>
+                </div>
+            </div>
+            
             <iframe 
+                id="live-player"
                 src="https://www.youtube.com/embed/live_stream?channel=UCYVUySsRy6-47tKNqA95pRA" 
                 frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
             </iframe>
         </section>
 
         <section class="chat-container">
-            <iframe 
-                id="chat-embed"
-                src="https://www.youtube.com/live_chat?v=live_stream&embed_domain=https://mylivestream.netlify.app" 
-                frameborder="0">
-            </iframe>
+            <div class="chat-header">LIVE CHAT</div>
+            <div id="chat-placeholder">
+                <p>Chat will activate once we are live!</p>
+            </div>
         </section>
     </main>
 </body>
-    </html>
+        </html>
