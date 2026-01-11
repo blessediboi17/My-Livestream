@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Live Stream</title>
+    <title>Live Stream | My Channel</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,17 +17,20 @@
     <main class="container">
         <section class="video-container">
             <iframe 
-                src="https://www.youtube.com/embed/live_stream?channel=YOUR_CHANNEL_ID_HERE" 
+                src="https://www.youtube.com/embed/live_stream?channel=UCYVUySsRy6-47tKNqA95pRA" 
                 frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
                 allowfullscreen>
             </iframe>
         </section>
 
         <section class="chat-container">
-            <div class="chat-placeholder">
-                <p>Chat Loading...</p>
-                </div>
+            <iframe 
+                id="chat-embed"
+                src="https://www.youtube.com/live_chat?v=live_stream&embed_domain=https://mylivestream.netlify.app" 
+                frameborder="0">
+            </iframe>
         </section>
     </main>
 </body>
-  </html>
+    </html>
